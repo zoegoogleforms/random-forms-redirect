@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirection aléatoire</title>
+    <script>
+        function redirectRandomly() {
+            // Les URLs des deux Google Forms
+            var form1 = "https://www.leagueoflegends.com/fr-fr/champions/pyke/";
+            var form2 = "https://www.leagueoflegends.com/fr-fr/champions/aatrox/";
+
+            // Choix aléatoire
+            var randomChoice = Math.random() < 0.5 ? form1 : form2;
+
+            // Redirection
+            window.location.href = randomChoice;
+        }
+    </script>
+</head>
+<body onload="redirectRandomly()">
+    <p>Redirection en cours...</p>
+</body>
+</html>
